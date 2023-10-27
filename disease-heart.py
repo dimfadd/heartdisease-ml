@@ -151,6 +151,6 @@ if loaded_model is not None:
     st.success(f"Result of this Prediction is {output}")
 
     if (prediction == 0).any():
-        st.image(healthheart)
+        st.image(healthheart, width=400)
     else:
-        st.image(diseaseheart)
+        st.image(diseaseheart, width=400)
