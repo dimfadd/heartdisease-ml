@@ -8,29 +8,11 @@ import time
 from PIL import Image
 
 #set judul halaman web
-st.set_page_config(page_title="Final Project 4TUNE8", layout="wide")
-
-#buat logo 4TUNE8 ke tengah
-col1, col2, col3, col4, col5 = st.columns(5)
-
-with col1:
-    st.write(' ')
-
-with col2:
-    st.write(' ')
-
-with col3:
-    st.image('logo_4tune8.png', width=150, caption='4TUNE8 Team')
-
-with col4:
-    st.write(' ')
-
-with col5:
-    st.write(' ')
+st.set_page_config(page_title="Final Project", layout="wide")
 
 # Center-aligned text using CSS
 st.markdown("""
-    <h1 style='text-align: center;'>Welcome to 4TUNE8's Machine Learning Dashboard</h1>
+    <h1 style='text-align: center;'>Welcome to Heart Disease Machine Learning Dashboard</h1>
     """, unsafe_allow_html=True)
 
 add_selectitem = st.sidebar.selectbox("Want do you want?", ("Checking your heart!",))
